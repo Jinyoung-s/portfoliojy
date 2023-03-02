@@ -49,7 +49,7 @@ const Head = () => {
 
         <div className="md:h-[37rem] h-96">
           <img
-            src="/person.png"
+            src="/ss1.png"
             data-aos="slide-up"
             alt="..."
             className="h-full object-cover"

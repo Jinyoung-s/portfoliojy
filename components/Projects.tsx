@@ -11,7 +11,7 @@ const Projects = () => {
   const { projects } = content;
   return (
     <section className="bg-white" id="projects">
-      <div className="md:container px-5 pt-14 min-h-screen flex flex-col justify-between">
+      <div className="md:container px-5 pt-14 flex flex-col mb-28">
         <div>
           <h4 className="subtitle" data-aos="fade-down">
             Personal Projects
@@ -26,7 +26,7 @@ const Projects = () => {
             data-aos="fade-left"
             spaceBetween={20}
             modules={[Pagination]}
-            className="rounded-3xl pb-16 max-w-xs drop-shadow-primary self-start"
+            className="rounded-3xl pb-16 max-w-sm drop-shadow-primary self-start"
           >
             {projects.project_content.map((content, i) => (
               <SwiperSlide
@@ -50,12 +50,6 @@ const Projects = () => {
               </SwiperSlide>
             ))}
           </Swiper>
-          <Image
-            src={projects.image}
-            alt="..."
-            data-aos="fade-right"
-            className="max-w-[45vw] min-w-[22rem]"
-          />
         </div>
       </div>
     </section>
