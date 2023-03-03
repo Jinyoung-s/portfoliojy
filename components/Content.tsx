@@ -148,19 +148,19 @@ export const content = {
     subtitle: "Contect Me",
     social_media: [
       {
-        text: "soginyoung23@gmail.com",
+        text: "sojinyoung23@gmail.com",
         icon: GrMail,
-        link: "soginyoung23@gmail.com",
+        link: "mailto:sojinyoung23@gmail.com",
       },
       {
         text: "+1 519 572 3760",
         icon: MdCall,
-        link: "https://wa.me/1234567890",
+        link: "https://wa.me/5195723760",
       },
       {
         text: "Linkedin",
         icon: BsLinkedin,
-        link: "https://www.instagram.com/codeaprogram/",
+        link: "https://www.linkedin.com/in/jinyoung-so-7944b9238/",
       },
     ],
   },

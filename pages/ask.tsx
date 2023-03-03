@@ -15,9 +15,7 @@ const Ask = () => {
   useEffect(() => {}, []);
 
   const getMsg = async (question: string) => {
-    const res = await axios.get(
-      publicRuntimeConfig.SERVER_URL + "/" + question
-    );
+    const res = await axios.get("/getdata/" + question);
     console.log(res.data);
     return res.data;
   };
@@ -80,7 +78,7 @@ const Ask = () => {
       ld.push(<TerminalOutput key={getKey()}></TerminalOutput>);
 
       ld.push(
-        <TerminalOutput key={getKey()}>drwxrwxr-x histoy</TerminalOutput>
+        <TerminalOutput key={getKey()}>drwxrwxr-x history</TerminalOutput>
       );
       ld.push(
         <TerminalOutput key={getKey()}>drwxrwxr-x education</TerminalOutput>
@@ -93,7 +91,7 @@ const Ask = () => {
       );
     } else if (input.toLocaleLowerCase().trim() === "cd history") {
       router.push("/#history");
-    } else if (input.toLocaleLowerCase().trim() === "cd eucation") {
+    } else if (input.toLocaleLowerCase().trim() === "cd education") {
       router.push("/#educations");
     } else if (input.toLocaleLowerCase().trim() === "cd project") {
       router.push("/#projects");
