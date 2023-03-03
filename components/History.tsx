@@ -4,7 +4,7 @@ import Image from "next/image";
 const History = () => {
   const { history } = content;
   return (
-    <section id="services">
+    <section id="history">
       <div className="md:container px-5 py-14">
         <h4 className="subtitle" data-aos="fade-down">
           {history.subtitle}

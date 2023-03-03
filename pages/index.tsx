@@ -10,6 +10,7 @@ import { useEffect } from "react";
 // Animation package
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Link from "next/link";
 
 const Home = () => {
   useEffect(() => {
@@ -22,6 +23,13 @@ const Home = () => {
 
   return (
     <div>
+      <div className="w-full flex justify-center">
+        <div className="sm:cursor-pointer fixed top-1 left-1 z-[999] rounded-lg bg-white/40 p-2">
+          <Link href="/ask">
+            <button className="btn">Ask AI</button>
+          </Link>
+        </div>
+      </div>
       <Head />
       <Skills />
       <History />

@@ -30,11 +30,11 @@ export const content = {
     btnText: "Hire Me",
     hero_content: [
       {
-        count: "7+",
+        count: "8+",
         text: "Years of Experinse in Web development",
       },
       {
-        count: "20+",
+        count: "10+",
         text: "Projects Worked in my career",
       },
     ],
